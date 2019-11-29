@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index.html</title>
+</head>
+<body>
+    Hello, world!
+    <form action="{{ url_for('predict')}}" method="post">
+        RM:<br>
+        <input type="text" name="RM"><br>
+        LSTAT:<br>
+        <input type="text" name="LSTAT"><br>
+        PTRATIO:<br>
+        <input type="text" name="PTRATIO"><br>
+        <button type="submit">Predict</button>
+    </form>
+
+</body>
+</html>
